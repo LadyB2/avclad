@@ -1,0 +1,35 @@
+
+:set paste
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of the United Kingdom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #2a56c6;
+        }
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Age of the United Kingdom</h1>
+    <p id="uk-age">Calculating...</p>
+    <script>
+        const establishmentYear = 1707; // Year when the UK was established
+        const currentYear = new Date().getFullYear();
+        const age = currentYear - establishmentYear;
+
+        document.getElementById("uk-age").textContent = `The United Kingdom is ${age} years old.`;
+    </script>
+</body>
+</html>
+
